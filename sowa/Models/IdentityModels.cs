@@ -29,5 +29,9 @@ namespace sowa.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<sowa.Models.Student> Students { get; set; }
+        public System.Data.Entity.DbSet<sowa.Models.MembershipType> MemberShipTypes { get; set; }
+        public System.Data.Entity.DbSet<sowa.Models.Subject> Subjects { get; set; }
     }
 }
